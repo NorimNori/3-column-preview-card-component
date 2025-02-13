@@ -1,0 +1,44 @@
+@use "@/styles/colors";
+@use "@/styles/fonts";
+
+.SEDANS {
+    background-color: colors.$brightOrange;
+    border-radius: 5px 5px 0 0;
+}
+  
+.SUVS {
+    background-color: colors.$darkCyan;
+}
+  
+.LUXURY {
+    background-color: colors.$veryDarkCyan;
+    border-radius:  0 0 5px 5px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 2.5em;
+    color: colors.$transparentWhite;
+
+    &__icon {
+        width: 3.734em;
+        height: 2.1em;
+    }
+
+    &__title {
+        color: colors.$veryLightGray;
+        font-family: fonts.$bigShouldersDisplay;
+        font-size: 2rem;
+    }
+
+    &__description {
+        font-family: fonts.$lexedDeca;
+        font-size: .9rem;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        padding-right: .9em;
+    }
+}
+

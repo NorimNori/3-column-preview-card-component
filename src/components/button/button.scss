@@ -1,0 +1,13 @@
+@use "@/styles/colors";
+@use "@/styles/fonts";
+
+.card__button {
+    width: 7rem;
+    padding: .8em 1em;
+    border: none;
+    border-radius: 3.5rem;
+    background-color: colors.$veryLightGray;
+    font-family: fonts.$lexedDeca;
+    font-size: .85rem;
+    font-weight: 400;
+}

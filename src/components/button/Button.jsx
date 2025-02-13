@@ -2,7 +2,7 @@ import './button.scss'
 
 const Button = () => {
   return (
-    <button>Button</button>
+    <button className='card__button' type='button'>Learn More</button>
   )
 }
 

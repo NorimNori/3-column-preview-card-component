@@ -34,12 +34,22 @@ a:not([class]) {
 }
 
 body {
-    @include mixins.center-grid;
-    grid-template-rows: 1fr auto;
+    width: 100vw;
     height: 100vh;
     padding: 1rem;
     margin: 0;
 
     background-color: colors.$veryLightGray;
+}
+
+#root{
+    width: 100%;
+    @include mixins.center-grid;
+    grid-template-rows: 1fr auto;
+}
+
+section {
+    width: 80vw;
+    margin: 3rem 0;
 }
 
