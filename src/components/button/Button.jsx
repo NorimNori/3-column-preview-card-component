@@ -1,8 +1,8 @@
-import './card.scss'
+import './button.scss'
 
 const Button = () => {
   return (
-    <div>Button</div>
+    <button>Button</button>
   )
 }
 

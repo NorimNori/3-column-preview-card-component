@@ -1,4 +1,7 @@
 import './App.scss'
+import Button from '@/components/button/index'
+import Card from '@/components/card/index'
+
 
 function App() {
 
@@ -20,6 +23,8 @@ function App() {
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="#">Your Name Here</a>.
       </div>
+      <Button />
+      <Card />
     </>
   )
 }
