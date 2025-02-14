@@ -11,3 +11,24 @@
     font-size: .85rem;
     font-weight: 400;
 }
+
+.SEDANS-button {
+    color: colors.$brightOrange;
+    font-weight: 600;
+}
+  
+.SUVS-button {
+    color: colors.$darkCyan;
+    font-weight: 600;
+}
+  
+.LUXURY-button {
+    color: colors.$veryDarkCyan;
+    font-weight: 600;
+}
+
+@media (min-width: 1025px) {
+    .card__button {
+        margin-top: 3rem;
+    }
+}

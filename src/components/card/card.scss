@@ -18,27 +18,46 @@
 .card {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    justify-content: space-between;
+    gap: 1.7em;
     padding: 2.5em;
     color: colors.$transparentWhite;
 
     &__icon {
-        width: 3.734em;
+        width: 3.75em;
         height: 2.1em;
     }
 
     &__title {
         color: colors.$veryLightGray;
         font-family: fonts.$bigShouldersDisplay;
-        font-size: 2rem;
+        font-weight: 700;
+        font-size: clamp(2.4rem, 2.342rem + 0.247vw, 2.5rem);
     }
 
     &__description {
         font-family: fonts.$lexedDeca;
-        font-size: .9rem;
+        font-weight: 400;
+        font-size: clamp(0.9rem, 0.842rem + 0.247vw, 1rem);
         line-height: 1.5;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.015em;
         padding-right: .9em;
+    }
+}
+
+@media (min-width: 1025px) {
+    .SEDANS {
+        border-radius: 5px 0 0 5px;
+    }
+      
+    .SUVS {
+        background-color: colors.$darkCyan;
+        // padding-right: .9em;
+    }
+      
+    .LUXURY {
+        background-color: colors.$veryDarkCyan;
+        border-radius:  0 5px 5px 0;
     }
 }
 

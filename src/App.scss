@@ -34,9 +34,10 @@ a:not([class]) {
 }
 
 body {
-    width: 100vw;
+    @include mixins.center-grid;
+    width: 100%;
     height: 100vh;
-    padding: 1rem;
+    padding: 0;
     margin: 0;
 
     background-color: colors.$veryLightGray;
@@ -44,12 +45,22 @@ body {
 
 #root{
     width: 100%;
+    padding: 1rem;
     @include mixins.center-grid;
     grid-template-rows: 1fr auto;
 }
 
 section {
-    width: 80vw;
-    margin: 3rem 0;
+    display: grid;
+    width: 85%;
+    max-width: 30rem;
+    margin: 3.5rem 0;
+}
+
+@media (min-width: 1025px) {
+    section {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 57rem;
+    }
 }
 
