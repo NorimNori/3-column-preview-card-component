@@ -57,6 +57,16 @@ section {
     margin: 3.5rem 0;
 }
 
+footer {
+    font-size: .7rem;
+    color: colors.$veryDarkCyan;
+    padding-bottom: 1rem;
+    a { 
+        text-align: center;
+        color: colors.$darkCyan
+    }
+}
+
 @media (min-width: 1025px) {
     section {
         grid-template-columns: repeat(3, 1fr);

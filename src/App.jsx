@@ -18,11 +18,12 @@ function App() {
         ))}
       </section>
 
-  
-      <div className="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
-      </div>
+      <footer className="footer" role="contentinfo">
+        <p className="footer__text">
+        Challenge by <a className="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank" title="Visit Frontend Mentor">Frontend Mentor</a>. 
+        Coded by <a className="footer__link" href="https://www.frontendmentor.io/profile/NorimNori" title="Visit Gloria Rangel's profile">Gloria Rangel</a>.
+        </p>
+      </footer>
     </>
   )
 }
