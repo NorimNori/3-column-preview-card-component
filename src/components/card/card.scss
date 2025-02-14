@@ -1,9 +1,9 @@
 @use "@/styles/colors";
 @use "@/styles/fonts";
+@use "@/styles/mixins";
 
 .SEDANS {
-    background-color: colors.$brightOrange;
-    border-radius: 5px 5px 0 0;
+    @include mixins.box-style(colors.$brightOrange, 5px 5px 0 0);
 }
   
 .SUVS {
@@ -11,8 +11,7 @@
 }
   
 .LUXURY {
-    background-color: colors.$veryDarkCyan;
-    border-radius:  0 0 5px 5px;
+    @include mixins.box-style(colors.$veryDarkCyan,  0 0 5px 5px);
 }
 
 .card {
@@ -29,16 +28,12 @@
     }
 
     &__title {
+        @include mixins.font-style(clamp(2.4rem, 2.342rem + 0.247vw, 2.5rem), 700, fonts.$bigShouldersDisplay);
         color: colors.$veryLightGray;
-        font-family: fonts.$bigShouldersDisplay;
-        font-weight: 700;
-        font-size: clamp(2.4rem, 2.342rem + 0.247vw, 2.5rem);
     }
 
     &__description {
-        font-family: fonts.$lexedDeca;
-        font-weight: 400;
-        font-size: clamp(0.9rem, 0.842rem + 0.247vw, 1rem);
+        @include mixins.font-style(clamp(0.9rem, 0.842rem + 0.247vw, 1rem), 400, fonts.$lexedDeca);
         line-height: 1.5;
         letter-spacing: 0.015em;
         padding-right: .9em;
@@ -50,13 +45,7 @@
         border-radius: 5px 0 0 5px;
     }
       
-    .SUVS {
-        background-color: colors.$darkCyan;
-        // padding-right: .9em;
-    }
-      
     .LUXURY {
-        background-color: colors.$veryDarkCyan;
         border-radius:  0 5px 5px 0;
     }
 }

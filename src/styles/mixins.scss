@@ -2,3 +2,21 @@
     display: grid;
     place-items: center;
 }
+
+@mixin box-style($bg-color, $radius: 0) {
+    background-color: $bg-color;
+    border-radius: $radius;
+}
+
+@mixin font-style($size, $weight: 400, $family) {
+    font: {
+        size: $size;
+        weight: $weight;
+        family: $family;
+    }
+}
+
+@mixin button-font-style($color) {
+    color: $color;
+    font-weight: 600;
+}
