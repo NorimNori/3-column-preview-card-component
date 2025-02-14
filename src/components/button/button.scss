@@ -6,8 +6,16 @@
     width: 7rem;
     padding: .8em 1em;
     border: none;
+    cursor: pointer;
+    transition: background 0.4s ease, transform 0.3s ease;
     @include mixins.box-style(colors.$veryLightGray, 3.5rem);
     @include mixins.font-style(.85rem, 400, fonts.$lexedDeca);
+
+    &:hover{
+        outline: 2px solid colors.$veryLightGray;
+        background-color: transparent;
+        color: colors.$veryLightGray
+    }
 }
 
 .SEDANS-button {
