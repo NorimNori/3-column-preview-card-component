@@ -7,16 +7,18 @@ function App() {
 
   return (
     <>
-      <section>
+      <main aria-labelledby="car-categories">
+      <h2 id="car-categories" className="sr-only">Categorías de coches</h2>
         {CAR_CATEGORIES.map((car) => (
           <Card
             key={car.id}
             title={car.title}
             description={car.description}
             icon={car.icon}
+            aria-labelledby={`card-${car.id}`}
           />
         ))}
-      </section>
+      </main>
 
       <footer className="footer" role="contentinfo">
         <p className="footer__text">

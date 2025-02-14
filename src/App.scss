@@ -50,12 +50,24 @@ body {
     grid-template-rows: 1fr auto;
 }
 
-section {
+main {
     display: grid;
     width: 85%;
     max-width: 30rem;
     margin: 3.5rem 0;
 }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  
 
 footer {
     font-size: .7rem;
@@ -68,7 +80,7 @@ footer {
 }
 
 @media (min-width: 1025px) {
-    section {
+    main {
         grid-template-columns: repeat(3, 1fr);
         max-width: 57rem;
     }
